@@ -1,4 +1,5 @@
 import { putMessage, getMessages, deleteMessage } from "./modules/fetch.js";
+import { displayMessage } from "./modules/display.js";
 
 //Hamburger menu "Start"//
 const hamburger = document.querySelector('.hamburger');
@@ -23,7 +24,8 @@ formEL.addEventListener('submit', (event) =>{
     const userInput = document.querySelector('input').value;
    
     putMessage(userInput);
-    getMessages();
+    getMessages(userInput)
+        .then(displayMessage)
     formEL.reset();
 })
 
