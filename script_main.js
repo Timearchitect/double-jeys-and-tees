@@ -23,9 +23,10 @@ formEL.addEventListener('submit', (event) =>{
     event.preventDefault();
     const userInput = document.querySelector('input').value;
    
-    putMessage(userInput);
-    getMessages(userInput)
+    putMessage(userInput)
+        .then(getMessages)
         .then(displayMessage)
+
     formEL.reset();
 })
 

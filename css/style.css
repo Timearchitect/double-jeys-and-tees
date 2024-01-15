@@ -101,12 +101,24 @@ form{
     margin-top: 30px;
     text-align: center;
 }
+ form input{
+    height: 30px;
+    border-radius: 30px;
+    border-color: #262626;
+    padding-left: 10px;
+    width: 10rem;
+ }
+ form button{
+    margin-left: 10px;
+    padding: 0.3rem;
+ }
 
 #messageDivStyle{
     text-align: center;
     margin: 10px;
     
 }
+
 #messageDivStyle p{
     background-color: purple;
     color: white;
@@ -115,6 +127,8 @@ form{
     border-radius: 20px;
 }
 
+
 #messageContainer{
     margin-top: 20px;
+
 }

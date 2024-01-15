@@ -1,12 +1,13 @@
 const messageContainer = document.querySelector('#messageContainer');
-function displayMessage(text){
+function displayMessage(message){
 
     const messageDiv = document.createElement('div');
     messageDiv.id = 'messageDivStyle';
     
-    createAndAppendElement('p',text,messageDiv);
+    createAndAppendElement('p',message.text,messageDiv);
     messageContainer.append(messageDiv);
-    
+
+
 }
 
 function createAndAppendElement(type,content,container){

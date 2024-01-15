@@ -40,7 +40,7 @@ async function patchMessage() {
         body: JSON.stringify(messageObject),
     };
 
-    let response = await fetch(BASE_URL,requestOptions);
+    let response = await fetch(baseUrl,requestOptions);
     let data = await response.json();
     console.log(data);
 }
@@ -49,8 +49,8 @@ async function patchMessage() {
 async function getMessages() {
     let response = await fetch(baseUrl);
     let data = await response.json();
-    console.log(data.text);
-    return data.text;
+    console.log(data);
+    return data;
 }
 
 /* DELETE */
