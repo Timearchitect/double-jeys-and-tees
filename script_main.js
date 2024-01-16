@@ -16,9 +16,11 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
 })
 )
 //Hamburger menu "End"//
-
+const messageContainer = document.querySelector('#messageContainer');
+messageContainer.classList.add('displayHide');
 
 const formEL = document.querySelector('form');
+formEL.classList.add('displayHide');
 formEL.addEventListener('submit', (event) =>{
     event.preventDefault();
     const userInput = document.querySelector('input').value;
@@ -28,6 +30,19 @@ formEL.addEventListener('submit', (event) =>{
         .then(displayMessage)
 
     formEL.reset();
+})
+
+
+const shoppingListHeading = document.querySelector('#shoppingListHeading');
+shoppingListHeading.classList.add('displayHide');
+
+const createListBtn = document.querySelector('#btnDiv');
+createListBtn.addEventListener('click', ()=>{
+    formEL.classList.remove('displayHide');
+    createListBtn.classList.add('displayHide');
+
+    shoppingListHeading.classList.remove('displayHide');
+
 })
 
 

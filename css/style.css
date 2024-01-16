@@ -97,8 +97,15 @@ a{
 }
 /* Hamburger menu And Navbar "Start" */
 
+.displayShow{
+    display: block;
+}
+.displayHide{
+    display: none;
+}
+
 form{
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: center;
 }
  form input{
@@ -113,22 +120,52 @@ form{
     padding: 0.3rem;
  }
 
+#btnDiv{
+    transform: translate(-50%, -50%);
+    position: fixed;
+    bottom: 150px;
+    left: 50%
+}
+#btnDiv button{
+    padding: 8px;
+}
+
+#shoppingListHeading{
+    text-align: center;
+    margin-top: 30px;
+
+
+}
+#shoppingListHeading p{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
 #messageDivStyle{
     text-align: center;
     margin: 10px;
+    border: 1px solid black;
     
 }
-
-#messageDivStyle p{
+/* #messageDivStyle p{
     background-color: purple;
     color: white;
     display: inline-block;
     padding: 10px;
     border-radius: 20px;
-}
-
+} */
 
 #messageContainer{
-    margin-top: 20px;
-
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    width: 50%;
+  
+}
+#messageContainer p{
+    box-sizing: border-box;
+    text-align: left;
+    padding: 10px;
 }
