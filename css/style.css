@@ -97,6 +97,13 @@ a{
 }
 /* Hamburger menu And Navbar "Start" */
 
+.displayShow{
+    display: block;
+}
+.displayHide{
+    display: none;
+}
+
 form{
     margin-top: 30px;
     text-align: center;
@@ -113,12 +120,19 @@ form{
     padding: 0.3rem;
  }
 
+#btnDiv{
+    text-align: center;
+}
+#btnDiv button{
+    padding: 8px;
+}
+
+
 #messageDivStyle{
     text-align: center;
     margin: 10px;
     
 }
-
 #messageDivStyle p{
     background-color: purple;
     color: white;
@@ -126,7 +140,6 @@ form{
     padding: 10px;
     border-radius: 20px;
 }
-
 
 #messageContainer{
     margin-top: 20px;
