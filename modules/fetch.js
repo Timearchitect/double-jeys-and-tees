@@ -1,16 +1,73 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyBN11hu8pjCdpykxWLyJb7mTFbPm0jBILI",
+let baseUrl = `https://doublejeysandtees-default-rtdb.europe-west1.firebasedatabase.app/.json`;
 
-  authDomain: "doublejeysandtees.firebaseapp.com",
+/* PUT */
+async function putMessage(userInput) {
+    let messageObject = { text:userInput, time: new Date() };
 
-  databaseURL:
-    "https://doublejeysandtees-default-rtdb.europe-west1.firebasedatabase.app",
+    const requestOptions = {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(messageObject),
+    };
 
-  projectId: "doublejeysandtees",
+    let response = await fetch(baseUrl,requestOptions);
+    let data = await response.json();
+    console.log(data);
+}
 
-  storageBucket: "doublejeysandtees.appspot.com",
+/* POST */
+async function postMessage() {
+    let messageObject = { text: "Hello world", time: new Date() };
 
-  messagingSenderId: "873418975332",
+    const requestOptions = {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(messageObject),
+    };
 
-  appId: "1:873418975332:web:abfbff74fbe4f7ae061771",
-};
+    let response = await fetch(baseUrl,requestOptions);
+    let data = await response.json();
+    console.log(data);
+}
+
+/* PATCH */
+async function patchMessage() {
+    let messageObject = { text: "Hello world put", time: new Date() };
+
+    const requestOptions = {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(messageObject),
+    };
+
+    let response = await fetch(baseUrl,requestOptions);
+    let data = await response.json();
+    console.log(data);
+}
+
+/* GET */
+async function getMessages() {
+    let response = await fetch(baseUrl);
+    let data = await response.json();
+    console.log(data);
+    return data;
+}
+
+/* DELETE */
+async function deleteMessage() {
+    const requestOptions = {
+        method: "DELETE",
+    };
+    let response = await fetch(baseUrl,requestOptions);
+    let data = await response.json();
+    console.log(data);
+}
+
+
+export{
+    getMessages,
+    putMessage,
+    postMessage,
+    patchMessage,
+    deleteMessage
+}
