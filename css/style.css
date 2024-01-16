@@ -9,9 +9,6 @@ header{
     background-color: black;
 }
 
-li {
-    list-style: none;
-}
 
 a{
     color: white;
@@ -105,15 +102,20 @@ a{
 }
 
 form{
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
 }
  form input{
     height: 30px;
     border-radius: 30px;
-    border-color: #262626;
+    /* border-color: #262626; */
     padding-left: 10px;
-    width: 10rem;
+    width: 11rem;
+    background-color: #b4afaf;
+    color: white;
+    border: none;
+    box-shadow: inset 0 10px 10px rgb(115, 114, 114);
+
  }
  form button{
     margin-left: 10px;
@@ -149,20 +151,20 @@ form{
     border: 1px solid black;
     
 }
-/* #messageDivStyle p{
-    background-color: purple;
-    color: white;
-    display: inline-block;
-    padding: 10px;
-    border-radius: 20px;
-} */
+
+ul{
+    width: 80%;
+    margin: auto;
+}
 
 #messageContainer{
-    margin: auto;
-    text-align: center;
+    box-sizing: border-box;
+    padding: 15px;
+    /* text-align: center; */
     border: 1px solid black;
-    width: 50%;
-  
+    width: 70%;
+    margin: auto;
+    border-radius: 8px;
 }
 #messageContainer p{
     box-sizing: border-box;
