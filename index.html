@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#"/>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+          <a href="#" class="navbar-branding">Double Jeys & Tees</a> <!--Logo-->
+
+          <ul class="nav-menu">
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="nav-link">Contact</a>
+              </li>
+          </ul>
+
+          <div class="hamburger"> <!--menu bar tre stäck-->
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>     
+          </div>
+      </nav>
+  </header>
+
+  <div id="shoppingListHeading">
+    <p>SHOPPINGLIST</p>
+  </div>
+  <div id="messageContainer"></div>
+
+  <div id="btnDiv">
+    <button id="createListBtn">CREATE A LIST</button>
+  </div>
+
+  <form>
+    <input type="text" maxlength="50">
+    <button>Enter</button>
+  </form>
+   
+
+
+    <script src="./script_main.js" type="module"></script>
+  </body>
 </html>
