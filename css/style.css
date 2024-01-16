@@ -121,7 +121,10 @@ form{
  }
 
 #btnDiv{
-    text-align: center;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    bottom: 150px;
+    left: 50%
 }
 #btnDiv button{
     padding: 8px;
