@@ -87,6 +87,8 @@ a{
 
     .nav-item{
         margin: 16px 0;
+        list-style: none;
+        
     }
     .nav-menu.active{
         left: 0;
