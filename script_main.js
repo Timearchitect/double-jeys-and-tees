@@ -16,6 +16,7 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
 })
 )
 //Hamburger menu "End"//
+
 const messageContainer = document.querySelector('#messageContainer');
 messageContainer.classList.add('displayHide');
 
