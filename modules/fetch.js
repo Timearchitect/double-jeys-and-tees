@@ -12,7 +12,7 @@ async function putMessage(userInput) {
 
     let response = await fetch(baseUrl,requestOptions);
     let data = await response.json();
-    // console.log(data);
+    console.log(data);
 }
 
 /* POST */
@@ -27,7 +27,7 @@ async function postMessage() {
 
     let response = await fetch(baseUrl,requestOptions);
     let data = await response.json();
-    console.log(data);
+    // console.log(data);
 }
 
 /* PATCH */
@@ -42,14 +42,14 @@ async function patchMessage() {
 
     let response = await fetch(baseUrl,requestOptions);
     let data = await response.json();
-    console.log(data);
+    // console.log(data);
 }
 
 /* GET */
 async function getMessages() {
     let response = await fetch(baseUrl);
     let data = await response.json();
-    // console.log(data);
+    console.log(data);
     return data;
 }
 
@@ -60,7 +60,7 @@ async function deleteMessage() {
     };
     let response = await fetch(baseUrl,requestOptions);
     let data = await response.json();
-    console.log(data);
+    // console.log(data);
 }
 
 

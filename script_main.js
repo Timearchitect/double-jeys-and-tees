@@ -33,6 +33,8 @@ formEL.addEventListener('submit', (event) =>{
     formEL.reset();
 })
 
+// getMessages()
+//     .then(displayMessage)
 
 const shoppingListHeading = document.querySelector('#shoppingListHeading');
 shoppingListHeading.classList.add('displayHide');

@@ -1,8 +1,10 @@
+
 const messageContainer = document.querySelector('#messageContainer');
 const ulEL = document.createElement('ul');
 messageContainer.append(ulEL);
 
 function displayMessage(message){
+    console.log(message);
     messageContainer.classList.remove('displayHide');
 
     const textEl = document.createElement('li');
@@ -13,11 +15,6 @@ function displayMessage(message){
     // createAndAppendElement('p',message.text,messageContainer);
     // createAndAppendElement('li',message.text, ulEL);
     // messageContainer.append(ulEL);
-
-}
-
-function getText(textEl){
-    console.log(textEl);
 
 }
 

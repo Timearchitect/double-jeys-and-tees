@@ -116,7 +116,7 @@ form{
     background-color: #b4afaf;
     color: white;
     border: none;
-    box-shadow: inset 0 10px 10px rgb(115, 114, 114);
+    box-shadow: inset 0 10px 10px rgb(128, 128, 128);
 
  }
  form button{
@@ -167,6 +167,7 @@ ul{
     width: 70%;
     margin: auto;
     border-radius: 8px;
+    margin-top: 30px;
 }
 #messageContainer p{
     box-sizing: border-box;
