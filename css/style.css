@@ -177,3 +177,19 @@ ul{
 .hidden{
     display: none;
 }
+
+/* #textStyle{
+    margin-top: 15px;
+}
+.displayFlex{
+    display: flex;
+    justify-content: center;
+    gap:5px;
+}
+
+.boldStyle{
+    font-weight: bolder;
+}
+.italicStyle{
+    font-style: italic;
+} */

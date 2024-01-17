@@ -25,7 +25,7 @@ formEL.classList.add('displayHide');
 formEL.addEventListener('submit', (event) =>{
     event.preventDefault();
     const userInput = document.querySelector('input').value;
-   
+
     putMessage(userInput)
         .then(getMessages)
         .then(displayMessage)
@@ -37,13 +37,19 @@ formEL.addEventListener('submit', (event) =>{
 const shoppingListHeading = document.querySelector('#shoppingListHeading');
 shoppingListHeading.classList.add('displayHide');
 
+// const boldandItalicDiv = document.querySelector('#textStyle');
+// boldandItalicDiv.classList.add('displayHide');
+
 const createListBtn = document.querySelector('#btnDiv');
 createListBtn.addEventListener('click', ()=>{
     formEL.classList.remove('displayHide');
     createListBtn.classList.add('displayHide');
-
     shoppingListHeading.classList.remove('displayHide');
 
+    // boldandItalicDiv.classList.remove('displayHide');
+    // boldandItalicDiv.classList.add('displayFlex');
 })
+
+
 
 

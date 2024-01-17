@@ -12,7 +12,7 @@ async function putMessage(userInput) {
 
     let response = await fetch(baseUrl,requestOptions);
     let data = await response.json();
-    console.log(data);
+    // console.log(data);
 }
 
 /* POST */
@@ -49,7 +49,7 @@ async function patchMessage() {
 async function getMessages() {
     let response = await fetch(baseUrl);
     let data = await response.json();
-    console.log(data);
+    // console.log(data);
     return data;
 }
 
