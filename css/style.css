@@ -208,7 +208,7 @@ form button {
 
 body {
   --text-color: #ffffff;
-  --bkg-color: #c0befd;
+  --bkg-color: linear-gradient(69deg, rgba(192,190,253,1) 0%, rgba(163,158,239,1) 100%);;
   --nav-color: #045eb2;
   --form-color: #827fb7;
 }
