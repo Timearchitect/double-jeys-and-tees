@@ -16,8 +16,8 @@ async function putMessage(userInput) {
 }
 
 /* POST */
-async function postMessage() {
-    let messageObject = { text: "Hello world", time: new Date() };
+async function postMessage(userInput) {
+    let messageObject = { text: userInput, time: new Date() };
 
     const requestOptions = {
         method: "POST",
