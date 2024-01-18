@@ -27,7 +27,7 @@ async function postMessage() {
 
     let response = await fetch(baseUrl,requestOptions);
     let data = await response.json();
-    // console.log(data);
+    console.log(data);
 }
 
 /* PATCH */

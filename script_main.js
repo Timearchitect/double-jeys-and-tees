@@ -1,4 +1,4 @@
-import { putMessage, getMessages, deleteMessage } from "./modules/fetch.js";
+import { putMessage, getMessages, deleteMessage, postMessage } from "./modules/fetch.js";
 import { displayMessage } from "./modules/display.js";
 
 //Hamburger menu "Start"//
@@ -26,7 +26,8 @@ formEL.addEventListener("submit", (event) => {
   event.preventDefault();
   const userInput = document.querySelector("input").value;
 
-  putMessage(userInput).then(getMessages).then(displayMessage);
+//   putMessage(userInput).then(getMessages).then(displayMessage);
+  postMessage(userInput).then(getMessages).then(displayMessage);
 
   formEL.reset();
 });
