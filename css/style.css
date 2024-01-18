@@ -173,7 +173,7 @@ form button {
 
 }
 #shoppingListHeading p {
-  border: 1px solid black;
+  border: 1px solid var(--text-color);
   display: inline-block;
   padding: 8px;
   margin-bottom: 10px;
@@ -193,7 +193,7 @@ ul{
 
 #messageContainer {
   margin: auto;
-  border: 1px solid black;
+  border: 1px solid var(--text-color);
   width: 50%;
   box-sizing: border-box;
   padding: 15px;
@@ -202,6 +202,7 @@ ul{
 }
 #messageContainer li{
   line-height: 25px;
+  color: var(--text-color);
 }
 #messageContainer p {
   box-sizing: border-box;
@@ -258,6 +259,10 @@ body.dark-theme {
 #darkmodebutton{
   box-sizing: border-box;
   padding: 8px;
+  background-color: var(--bkg-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 10px;
 }
 
 /* * {
