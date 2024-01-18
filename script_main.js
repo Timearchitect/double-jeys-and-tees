@@ -43,7 +43,7 @@ createListBtn.addEventListener("click", () => {
   shoppingListHeading.classList.remove("displayHide");
 });
 
-// testar darkmode
+//  start darkmode
 
 const btn = document.querySelector(".btn-toggle");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
@@ -70,3 +70,4 @@ btn.addEventListener("click", function () {
   localStorage.setItem("theme", theme);
 });
 
+//end darkmode
