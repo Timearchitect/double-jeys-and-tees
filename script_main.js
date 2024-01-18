@@ -13,11 +13,6 @@ hamburger.addEventListener("click", () => {
 
 document.querySelectorAll(".nav-link").forEach((n) =>
   n.addEventListener("click", () => {
-    if(n.id === "about"){
-        const about = document.querySelector("#aboutsection");
-        about.classList.
-    }
-    console.log(n.id);
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
   })
