@@ -16,9 +16,10 @@ function displayMessage(message){
         console.log(popName);
         console.log(message[popName].text);
      
-        const textEl = document.createElement('li');
-        ulEL.append(textEl);
-        textEl.innerText = message[popName].text;
+        const textListEl = document.createElement('li');
+        textListEl.id = 'textList-style';
+        ulEL.append(textListEl);
+        textListEl.innerText = message[popName].text;
     }
 
 

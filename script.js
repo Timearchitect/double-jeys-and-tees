@@ -43,3 +43,13 @@ btn.addEventListener("click", function () {
 });
 
 //end darkmode
+
+
+
+// const createListBtn = document.querySelector("#btnDiv");
+// createListBtn.addEventListener("click", () => {
+//   formEL.classList.remove("displayHide");
+//   createListBtn.classList.add("displayHide");
+
+//   shoppingListHeading.classList.remove("displayHide");
+// });
