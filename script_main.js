@@ -18,6 +18,8 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   })
 );
 //Hamburger menu "End"//
+
+
 const messageContainer = document.querySelector("#messageContainer");
 messageContainer.classList.add("displayHide");
 
@@ -41,13 +43,13 @@ getMessages()
 const shoppingListHeading = document.querySelector("#shoppingListHeading");
 shoppingListHeading.classList.add("displayHide");
 
-const createListBtn = document.querySelector("#btnDiv");
-createListBtn.addEventListener("click", () => {
-  formEL.classList.remove("displayHide");
-  createListBtn.classList.add("displayHide");
+// const createListBtn = document.querySelector("#btnDiv");
+// createListBtn.addEventListener("click", () => {
+//   formEL.classList.remove("displayHide");
+//   createListBtn.classList.add("displayHide");
 
-  shoppingListHeading.classList.remove("displayHide");
-});
+//   shoppingListHeading.classList.remove("displayHide");
+// });
 
 //  start darkmode
 
