@@ -4,52 +4,134 @@
     <meta charset="UTF-8" />
     <link href="./css/style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="#"/>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
 
   <body>
-    <header>
-      <nav class="navbar">
-          <a href="#" class="navbar-branding">Double Jeys & Tees</a> <!--Logo-->
+    <!---------------header--------------->
+    <header id="header">
+      <nav class="navbar" id="headernav">
+        <a href="#" class="navbar-branding">Double Jeys & Tees</a>
+        <!--Logo-->
 
-          <ul class="nav-menu">
-              <li class="nav-item">
-                  <a href="#" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a href="#" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                  <a href="#" class="nav-link">Contact</a>
-              </li>
-          </ul>
+        <ul class="nav-menu" id="headernavhome">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
 
-          <div class="hamburger"> <!--menu bar tre stäck-->
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>     
-          </div>
+          <li>
+            <a href="#" class="nav-link" id="headernavshop">Shoppinglist</a>
+          </li>
+
+          <li class="nav-item" id="headernavabout">
+            <a href="#" class="nav-link">About</a>
+          </li>
+
+          <li class="nav-item" id="headernavcontact">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+
+          <li>
+            <button class="btn-toggle" id="darkmodebutton">Darkmode</button>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <!--menu bar tre stäck-->
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
-  </header>
+    </header>
+    <!------------------------------------------- maker put/replace in right place -->
+    <div id="shoppingListHeading">
+      <p>SHOPPINGLIST</p>
+    </div>
+    <div id="messageContainer"></div>
 
-  <div id="shoppingListHeading">
-    <p>SHOPPINGLIST</p>
-  </div>
-  <div id="messageContainer"></div>
+    <div id="btnDiv">
+      <button id="createListBtn">CREATE A LIST</button>
+    </div>
 
-  <div id="btnDiv">
-    <button id="createListBtn">CREATE A LIST</button>
-  </div>
-
-  <form>
-    <input type="text" maxlength="50">
-    <button>Enter</button>
-  </form>
-   
-
+    <form>
+      <input type="text" maxlength="50" />
+      <button>Enter</button>
+    </form>
 
     <script src="./script_main.js" type="module"></script>
+    <!--------------------------------------------------------------------->
+
+    <!----------------main---------------->
+    <main>
+      <section id="homesection">
+        <button id="homebutton">Create a list</button>
+      </section>
+
+      <section id="shoppinglistsection" class="hidden">
+        <div id="shoppinglistsearch"></div>
+        <form action="" id="shoppinglistform">
+          <button id="shoppinglistformbutton">Send</button>
+        </form>
+      </section>
+
+      <section id="aboutsection" class="hidden">
+        <div id="aboutdiv">
+          <img src="" alt="" id="aboutimg" />
+          <h1 id="abouth1">Name</h1>
+          <div>
+            <p id="aboutp1">Text about company</p>
+            <p id="aboutp2">Another text about company</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="hidden">
+        <form action="" id="contactform">
+          <input
+            type="text"
+            id="contactformname"
+            name="contactformname"
+            placeholder="Enter name"
+          />
+          <input
+            type="text"
+            id="contactformmail"
+            name="contactformmail"
+            placeholder="Enter mail"
+          />
+          <textarea
+            name="contactmessage"
+            id="contactmessage"
+            cols="30"
+            rows="7"
+            placeholder="Your enquiry.."
+          >
+          </textarea>
+          <button id="contactformbutton" class="submit-button">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <!---------------footer--------------->
+    <footer id="footer">
+      <div id="footername">&copy; Name</div>
+
+      <nav id="footernav">
+        <ul>
+          <li>
+            <a href="#">instagram</a>
+          </li>
+          <li>
+            <a href="#">twitter</a>
+          </li>
+          <li>
+            <a href="#">facebook</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
