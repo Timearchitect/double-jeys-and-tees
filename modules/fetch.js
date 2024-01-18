@@ -1,4 +1,4 @@
-let baseUrl = `https://doublejeysandtees-default-rtdb.europe-west1.firebasedatabase.app/.json`;
+let baseUrl = `https://doublejeysandtees-default-rtdb.europe-west1.firebasedatabase.app/messages/.json`;
 
 /* PUT */
 async function putMessage(userInput) {
@@ -16,8 +16,8 @@ async function putMessage(userInput) {
 }
 
 /* POST */
-async function postMessage() {
-    let messageObject = { text: "Hello world", time: new Date() };
+async function postMessage(userInput) {
+    let messageObject = { text: userInput, time: new Date() };
 
     const requestOptions = {
         method: "POST",
@@ -42,7 +42,7 @@ async function patchMessage() {
 
     let response = await fetch(baseUrl,requestOptions);
     let data = await response.json();
-    console.log(data);
+    // console.log(data);
 }
 
 /* GET */
@@ -60,7 +60,7 @@ async function deleteMessage() {
     };
     let response = await fetch(baseUrl,requestOptions);
     let data = await response.json();
-    console.log(data);
+    // console.log(data);
 }
 
 

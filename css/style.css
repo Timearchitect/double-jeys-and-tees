@@ -120,7 +120,7 @@ a {
     left: 0;
   }
 }
-/* Hamburger menu And Navbar "Start" */
+/* Hamburger menu And Navbar "End" */
 
 .displayShow {
   display: block;
@@ -171,13 +171,11 @@ form button {
   margin: 10px;
   border: 1px solid black;
 }
-/* #messageDivStyle p{
-    background-color: purple;
-    color: white;
-    display: inline-block;
-    padding: 10px;
-    border-radius: 20px;
-} */
+
+ul{
+    width: 80%;
+    margin: auto;
+}
 
 #messageContainer {
   margin: auto;
@@ -240,5 +238,6 @@ body.dark-theme {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
-.footer {
-}
+/* .footer{
+  
+} */

@@ -1,4 +1,4 @@
-import { putMessage, getMessages, deleteMessage } from "./modules/fetch.js";
+import { putMessage, getMessages, deleteMessage, postMessage } from "./modules/fetch.js";
 import { displayMessage } from "./modules/display.js";
 // import { takesubmit } from "./modules/userinput.js";
 
@@ -18,6 +18,8 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   })
 );
 //Hamburger menu "End"//
+
+
 const messageContainer = document.querySelector("#messageContainer");
 messageContainer.classList.add("displayHide");
 
@@ -27,21 +29,27 @@ formEL.addEventListener("submit", (event) => {
   event.preventDefault();
   const userInput = document.querySelector("input").value;
 
-  putMessage(userInput).then(getMessages).then(displayMessage);
+//   putMessage(userInput).then(getMessages).then(displayMessage);
+  postMessage(userInput)
+    // .then(getMessages).then(displayMessage);
 
   formEL.reset();
 });
 
+getMessages()
+  .then(displayMessage);
+
+
 const shoppingListHeading = document.querySelector("#shoppingListHeading");
 shoppingListHeading.classList.add("displayHide");
 
-const createListBtn = document.querySelector("#btnDiv");
-createListBtn.addEventListener("click", () => {
-  formEL.classList.remove("displayHide");
-  createListBtn.classList.add("displayHide");
+// const createListBtn = document.querySelector("#btnDiv");
+// createListBtn.addEventListener("click", () => {
+//   formEL.classList.remove("displayHide");
+//   createListBtn.classList.add("displayHide");
 
-  shoppingListHeading.classList.remove("displayHide");
-});
+//   shoppingListHeading.classList.remove("displayHide");
+// });
 
 //  start darkmode
 

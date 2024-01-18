@@ -1,14 +1,36 @@
-const messageContainer = document.querySelector('#messageContainer');
-function displayMessage(message){
-    messageContainer.classList.remove('displayHide');
-    // const messageDiv = document.createElement('div');
-    // messageDiv.id = 'messageDivStyle';
-    
-    // createAndAppendElement('p',message.text,messageDiv);
-    // messageContainer.append(messageDiv);
 
-    createAndAppendElement('p',message.text,messageContainer);
+const messageContainer = document.querySelector('#messageContainer');
+const ulEL = document.createElement('ul');
+messageContainer.append(ulEL);
+
+function displayMessage(message){
+    console.log(message);
+    console.log(typeof message);
+
+    for (const popName in message) {
+        console.log(popName);
+        console.log(message[popName].text);
+        messageContainer.classList.remove('displayHide');
+
+        const textEl = document.createElement('li');
+        ulEL.append(textEl);
+        textEl.innerText = message[popName].text;
+    }
+
+
+  
+    // createAndAppendElement('p',message.text,messageContainer);
+    // createAndAppendElement('li',message.text, ulEL);
+    // messageContainer.append(ulEL);
+
 }
+
+// const boldStyle = document.querySelector('#boldStyle');
+// boldStyle.addEventListener('click', ()=>{
+//     boldStyle.classList.toggle('boldStyle');
+
+// })
+
 
 function createAndAppendElement(type,content,container){
     const element = document.createElement(type);
