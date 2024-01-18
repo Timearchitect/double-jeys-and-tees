@@ -20,18 +20,18 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 //Hamburger menu "End"//
 
 
-const messageContainer = document.querySelector("#messageContainer");
-messageContainer.classList.add("displayHide");
+// const messageContainer = document.querySelector("#messageContainer");
+// messageContainer.classList.add('displayHide')
 
 const formEL = document.querySelector("form");
-formEL.classList.add("displayHide");
+
 formEL.addEventListener("submit", (event) => {
   event.preventDefault();
   const userInput = document.querySelector("input").value;
 
 //   putMessage(userInput).then(getMessages).then(displayMessage);
   postMessage(userInput)
-    // .then(getMessages).then(displayMessage);
+    .then(getMessages).then(displayMessage);
 
   formEL.reset();
 });
@@ -41,7 +41,7 @@ getMessages()
 
 
 const shoppingListHeading = document.querySelector("#shoppingListHeading");
-shoppingListHeading.classList.add("displayHide");
+
 
 // const createListBtn = document.querySelector("#btnDiv");
 // createListBtn.addEventListener("click", () => {
