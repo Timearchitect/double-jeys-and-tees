@@ -7,6 +7,13 @@
 }
 body {
   background: var(--bkg-color);
+  /* background-image: url(../img/HOMEimg.png);
+  background-position: 0% 100%; */
+}
+
+#background{
+  background: url(../img/HOMEimg.png);
+  height:90vh;
 }
 
 h1,
