@@ -5,11 +5,18 @@ messageContainer.append(ulEL);
 
 function displayMessage(message){
     console.log(message);
-    messageContainer.classList.remove('displayHide');
+    console.log(typeof message);
 
-    const textEl = document.createElement('li');
-    ulEL.append(textEl);
-    textEl.innerText = message.text;
+    for (const popName in message) {
+        console.log(popName);
+        console.log(message[popName].text);
+        messageContainer.classList.remove('displayHide');
+
+        const textEl = document.createElement('li');
+        ulEL.append(textEl);
+        textEl.innerText = message[popName].text;
+    }
+
 
   
     // createAndAppendElement('p',message.text,messageContainer);

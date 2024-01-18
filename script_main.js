@@ -28,10 +28,15 @@ formEL.addEventListener("submit", (event) => {
   const userInput = document.querySelector("input").value;
 
 //   putMessage(userInput).then(getMessages).then(displayMessage);
-  postMessage(userInput).then(getMessages).then(displayMessage);
+  postMessage(userInput)
+    // .then(getMessages).then(displayMessage);
 
   formEL.reset();
 });
+
+getMessages()
+  .then(displayMessage);
+
 
 const shoppingListHeading = document.querySelector("#shoppingListHeading");
 shoppingListHeading.classList.add("displayHide");

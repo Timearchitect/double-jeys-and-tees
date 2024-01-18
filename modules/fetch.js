@@ -1,4 +1,4 @@
-let baseUrl = `https://doublejeysandtees-default-rtdb.europe-west1.firebasedatabase.app/.json`;
+let baseUrl = `https://doublejeysandtees-default-rtdb.europe-west1.firebasedatabase.app/messages/.json`;
 
 /* PUT */
 async function putMessage(userInput) {
