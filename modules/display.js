@@ -21,13 +21,6 @@ function displayMessage(message){
         ulEL.append(textListEl);
         textListEl.innerText = message[popName].text;
     }
-
-
-  
-    // createAndAppendElement('p',message.text,messageContainer);
-    // createAndAppendElement('li',message.text, ulEL);
-    // messageContainer.append(ulEL);
-
 }
 
 // const boldStyle = document.querySelector('#boldStyle');
