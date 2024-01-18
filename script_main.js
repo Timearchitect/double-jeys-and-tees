@@ -1,5 +1,6 @@
 import { putMessage, getMessages, deleteMessage, postMessage } from "./modules/fetch.js";
 import { displayMessage } from "./modules/display.js";
+// import { takesubmit } from "./modules/userinput.js";
 
 //Hamburger menu "Start"//
 const hamburger = document.querySelector(".hamburger");
@@ -69,3 +70,4 @@ btn.addEventListener("click", function () {
   }
   localStorage.setItem("theme", theme);
 });
+
