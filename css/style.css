@@ -17,10 +17,10 @@ p {
 header {
   background-color: var(--nav-color);
 }
-
+/* 
 li {
   list-style: none;
-}
+} */
 
 a {
   color: var(--text-color);
@@ -41,7 +41,9 @@ a {
   align-items: center;
   gap: 30px;
 }
-
+.nav-item{
+  list-style: none;
+}
 .nav-branding {
   font-size: 2rem;
 }
@@ -179,8 +181,7 @@ ul{
 
 #messageContainer {
   margin: auto;
-  text-align: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 50%;
 }
 #messageContainer p {

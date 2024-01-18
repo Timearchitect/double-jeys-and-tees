@@ -1,17 +1,21 @@
 
 const messageContainer = document.querySelector('#messageContainer');
+
+
 const ulEL = document.createElement('ul');
 messageContainer.append(ulEL);
 
+
 function displayMessage(message){
+    ulEL.innerHTML = '';
     console.log(message);
     console.log(typeof message);
 
     for (const popName in message) {
+   
         console.log(popName);
         console.log(message[popName].text);
-        messageContainer.classList.remove('displayHide');
-
+     
         const textEl = document.createElement('li');
         ulEL.append(textEl);
         textEl.innerText = message[popName].text;
