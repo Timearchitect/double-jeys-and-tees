@@ -1,3 +1,4 @@
+import { deleteMessage } from "./fetch.js";
 
 const messageContainer = document.querySelector('#messageContainer');
 
@@ -24,7 +25,15 @@ function displayMessage(message){
         // const timeEl = document.createElement('p');
         // timeEl.id = 'timeELStyle';
         // timeEl.innerText = message[popName].time;
+        
+        const deleteBtn = document.createElement('button');
+        deleteBtn.innerText = 'Delete';
+        deleteBtn.addEventListener('click', ()=>{
+            deleteMessage(popName)
+        })
+        ulEL.append(deleteBtn);
     }
+
 }
 
 // const boldStyle = document.querySelector('#boldStyle');
