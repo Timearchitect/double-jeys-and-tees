@@ -49,20 +49,23 @@ async function patchMessage() {
 async function getMessages() {
     let response = await fetch(baseUrl);
     let data = await response.json();
-    console.log(data);
+    // console.log(data);
     return data;
 }
 
 /* DELETE */
-async function deleteMessage() {
+async function deleteMessage(type,key) {
+    const url = `https://doublejeysandtees-default-rtdb.europe-west1.firebasedatabase.app/${type}/${key}/.json`;
+
     const requestOptions = {
         method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(key),
     };
-    let response = await fetch(baseUrl,requestOptions);
+    let response = await fetch(url,requestOptions);
     let data = await response.json();
     // console.log(data);
 }
-
 
 export{
     getMessages,

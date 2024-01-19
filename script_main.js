@@ -37,6 +37,25 @@ formEL.addEventListener("submit", (event) => {
   formEL.reset();
 });
 
+const messageContainer = document.querySelector('#messageContainer');
+messageContainer.addEventListener('click',(event)=>{
+  event.preventDefault();
+  if(event.target.className === 'deleteButton'){
+    console.log(event.target);
+    getMessages()
+      .then(message =>  {
+        for (const key in message) {
+            const parentElement = event.target.parentElement;
+            if(parentElement.id === key){
+              parentElement.remove();
+              deleteMessage('messages',key);
+            }
+     
+        }
+      })
+  }
+})
+
 getMessages()
   .then(displayMessage);
 

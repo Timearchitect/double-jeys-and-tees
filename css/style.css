@@ -162,7 +162,7 @@ form button {
   bottom: 150px;
   left: 50%;
 }
-#btnDiv button {
+btnDiv button {
   padding: 8px;
 }
 
