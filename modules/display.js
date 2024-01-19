@@ -14,12 +14,16 @@ function displayMessage(message){
     for (const popName in message) {
    
         console.log(popName);
-        console.log(message[popName].text);
+        console.log(message[popName].time);
      
         const textListEl = document.createElement('li');
         textListEl.id = 'textList-style';
         ulEL.append(textListEl);
         textListEl.innerText = message[popName].text;
+
+        // const timeEl = document.createElement('p');
+        // timeEl.id = 'timeELStyle';
+        // timeEl.innerText = message[popName].time;
     }
 }
 

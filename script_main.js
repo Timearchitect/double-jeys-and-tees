@@ -28,6 +28,7 @@ const formEL = document.querySelector("form");
 formEL.addEventListener("submit", (event) => {
   event.preventDefault();
   const userInput = document.querySelector("input").value;
+  console.log(userInput.length);
 
 //   putMessage(userInput).then(getMessages).then(displayMessage);
   postMessage(userInput)
