@@ -3,6 +3,7 @@ import { deleteMessage } from "./fetch.js";
 const messageContainer = document.querySelector('#messageContainer');
 
 const ulEL = document.createElement('ul');
+ulEL.id = 'unOrdermessage';
 messageContainer.append(ulEL);
 
 
@@ -26,8 +27,8 @@ function displayMessage(message){
         // timeEl.innerText = message[popName].time;
         const deleteBtn = document.createElement('button');
         deleteBtn.classList.add('deleteButton');
-        deleteBtn.innerText = 'Delete';
         
+    
         textListEl.append(deleteBtn);
     }
 

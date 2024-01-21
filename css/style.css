@@ -185,10 +185,23 @@ btnDiv button {
   border: 1px solid black;
 } */
 
-ul{
+#unOrdermessage{
     width: 80%;
     margin: auto;
 }
+#unOrdermessage button{
+  background: url(../img/closeBtn.svg);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-color: none;
+  border: none;
+  position: relative;
+  bottom: 5px;
+
+  cursor: pointer;
+}
+
 
 #messageContainer {
   margin: auto;
