@@ -24,6 +24,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./script_main.js" type="module"></script>
+    <script src="./script_lists.js" type="module"></script>
     <title>ShoppingPal</title>
   </head>
 
@@ -76,6 +77,19 @@
       <input class="typeform" type="text" maxlength="30" required />
       <button>Enter</button>
     </form>
+    <!-- stoffe: Added this - form for creating a new list  -->
+    <div id="listsForm-wrapper">
+      <form id="listsForm">
+        <input id="lists-create-name" type="text" maxlength="20" required />
+        <button id="lists-create-submit">Create new list</button>
+      </form>
+    </div>
+    <div id="deleteListsForm-wrapper">
+      <form id="deleteListsForm">
+        <button id="lists-delete-submit">Delete list</button>
+      </form>
+    </div>
+    <!-- stoffe: ... down to here -->
 
     <!--------------------------------------------------------------------->
 

@@ -1,9 +1,10 @@
-import { putMessage, getMessages, deleteMessage, postMessage } from "./modules/fetch.js";
+import { putMessage, getMessages, deleteMessage, postMessage, } from "./modules/fetch.js";
 import { displayMessage } from "./modules/display.js";
 
 //Hamburger menu "Start"//
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
@@ -22,7 +23,10 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 // const messageContainer = document.querySelector("#messageContainer");
 // messageContainer.classList.add('displayHide')
 
+/*
+// stoffe: N.B. Replaced this event handler, see line 28 in scripts_list.js instead...
 const formEL = document.querySelector("form");
+
 
 formEL.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -41,27 +45,28 @@ formEL.addEventListener("submit", (event) => {
  // Andréa's code end here ////
  /////////////////////////////
 
-//   putMessage(userInput).then(getMessages).then(displayMessage);
+  //   putMessage(userInput).then(getMessages).then(displayMessage);
   postMessage(userInput)
     .then(getMessages).then(displayMessage);
 
   formEL.reset();
 });
+*/
 
 const messageContainer = document.querySelector('#messageContainer');
-messageContainer.addEventListener('click',(event)=>{
+messageContainer.addEventListener('click', (event) => {
   event.preventDefault();
-  if(event.target.className === 'deleteButton'){
+  if (event.target.className === 'deleteButton') {
     console.log(event.target);
     getMessages()
-      .then(message =>  {
+      .then(message => {
         for (const key in message) {
-            const parentElement = event.target.parentElement;
-            if(parentElement.id === key){
-              parentElement.remove();
-              deleteMessage('messages',key);
-            }
-     
+          const parentElement = event.target.parentElement;
+          if (parentElement.id === key) {
+            parentElement.remove();
+            deleteMessage('messages', key);
+          }
+
         }
       })
   }
@@ -110,4 +115,4 @@ btn.addEventListener("click", function () {
 });
 
 //end darkmode
-   
+
