@@ -14,5 +14,5 @@ Vid ändring i befintliga filer:
 Vid skapande av nya filer:
 
     Nya CSS-filer skall ligga i css-mappen.
-    Nya javascript-filer skapas som moduler i modules-mappen och importeras in i main.js (eller befintlig modul vid behov).
+    Nya javascript-filer skapas som moduler i modules-mappen och importeras in i script_main.js (eller befintlig modul vid behov).
     inga nya html filer
