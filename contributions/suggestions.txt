@@ -8,5 +8,4 @@ lägga till en ny shoppinglista
 animation när man kommer in på sidan
 styla darkmode knappen
 error meddelande för sidan
-text limitation på 50 tecken
 egna förslag välkomnas också
