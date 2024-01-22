@@ -203,7 +203,7 @@ btnDiv button {
   color: white;
   border-radius: 4px;
   border-color: #045eb2;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
 }
 
 /* #messageDivStyle {
@@ -237,7 +237,7 @@ btnDiv button {
   padding: 15px;
   border-radius: 10px;
   width: 85%;
-
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: var(--form-color);
 }
 #messageContainer li {
