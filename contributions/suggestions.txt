@@ -1,0 +1,11 @@
+förslag på features till vår sida
+
+
+styla footern
+styla knappen “create a list” (gärna med animation)
+pop-up meddelande “tack för ditt meddelande”på contact när man skickat meddelande
+lägga till en ny shoppinglista
+animation när man kommer in på sidan
+styla darkmode knappen
+error meddelande för sidan
+egna förslag välkomnas också

@@ -31,6 +31,19 @@ const formEL = document.querySelector("form");
 formEL.addEventListener("submit", (event) => {
   event.preventDefault();
   const userInput = document.querySelector("input").value;
+   ////////////////////////////
+  // Andréa added this part ///
+  ////////////////////////////
+
+ // *Explanation of feature added:
+ // *The feature aims to play a sound when the user adds an item to the shopping list by pressing "Enter."
+
+ const submitSound = new Audio('./audio/shoppinglist-submit-sound.mp3');
+ submitSound.play();
+ 
+ //////////////////////////////
+ // Andréa's code end here ////
+ /////////////////////////////
 
   //   putMessage(userInput).then(getMessages).then(displayMessage);
   postMessage(userInput)

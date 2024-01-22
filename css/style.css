@@ -9,7 +9,7 @@ body {
   background: var(--bkg-color);
 }
 
-#background{
+#background {
   background: url(../img/background-img.png);
   height: 95vh;
   background-size: cover;
@@ -23,7 +23,7 @@ p {
 header {
   background-color: var(--nav-color);
 }
-#headernavhome{
+#headernavhome {
   z-index: 1;
 }
 /* 
@@ -50,7 +50,7 @@ a {
   align-items: center;
   gap: 30px;
 }
-.nav-item{
+.nav-item {
   list-style: none;
 }
 .nav-branding {
@@ -98,10 +98,26 @@ a {
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#headingtitle {
+  text-align: center;
+  margin-top: 30px;
+}
+#headingtitle p {
+  border: 1px solid 045eb2;
+  display: inline-block;
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: #045eb2;
+  color: white;
+  border-radius: 4px;
+  border-color: #045eb2;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 @media (max-width: 450px) {
-  #background{
+  #background {
     background: url(../img/HOMEimg.png);
-    height:90vh;
+    height: 90vh;
     background-size: cover;
   }
 
@@ -151,7 +167,6 @@ a {
 #messageForm {
   margin: 30px 0;
   text-align: center;
-
 }
 form input {
   height: 30px;
@@ -175,17 +190,20 @@ btnDiv button {
   padding: 8px;
 }
 
-#shoppingListHeading {
+#headingtitle {
   text-align: center;
   margin-top: 30px;
-
 }
-#shoppingListHeading p {
-  border: 1px solid var(--text-color);
+#headingtitle p {
+  border: 1px solid 045eb2;
   display: inline-block;
   padding: 8px;
   margin-bottom: 10px;
-  border-radius: 10px;
+  background-color: #045eb2;
+  color: white;
+  border-radius: 4px;
+  border-color: #045eb2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
 }
 
 /* #messageDivStyle {
@@ -194,11 +212,11 @@ btnDiv button {
   border: 1px solid black;
 } */
 
-#unOrdermessage{
-    width: 80%;
-    margin: auto;
+#unOrdermessage {
+  width: 80%;
+  margin: auto;
 }
-#unOrdermessage button{
+#unOrdermessage button {
   background: url(../img/closeBtn2.svg);
   width: 20px;
   height: 20px;
@@ -209,30 +227,30 @@ btnDiv button {
   position: relative;
   bottom: 5px;
   cursor: pointer;
-
 }
-
 
 #messageContainer {
   margin: auto;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--formtext-color);
   width: 50%;
   box-sizing: border-box;
   padding: 15px;
   border-radius: 10px;
   width: 85%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: var(--form-color);
 }
-#messageContainer li{
+#messageContainer li {
   line-height: 25px;
-  color: var(--text-color);
+  color: var(--formtext-color);
 }
 #messageContainer p {
   box-sizing: border-box;
   text-align: left;
   padding: 10px;
   font-size: small;
+  color: var(--formtext-color);
 }
-
 
 .hidden {
   display: none;
@@ -251,17 +269,19 @@ btnDiv button {
 
 body {
   --text-color: #ffffff;
+  --formtext-color: #000000;
   --bkg-color: linear-gradient(
     69deg,
     rgba(192, 190, 253, 1) 0%,
     rgba(163, 158, 239, 1) 100%
   );
   --nav-color: #045eb2;
-  --form-color: #827fb7;
+  --form-color: #ffffff;
 }
 
 body.dark-theme {
   --text-color: #ffffff;
+  --formtext-color: #ffffff;
   --bkg-color: #292775;
   --nav-color: #011a31;
   --form-color: #141328;
@@ -279,7 +299,7 @@ body.dark-theme {
   }
 }
 
-#darkmodebutton{
+#darkmodebutton {
   box-sizing: border-box;
   padding: 8px;
   background-color: var(--bkg-color);

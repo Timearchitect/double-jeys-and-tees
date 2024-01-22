@@ -53,3 +53,10 @@ btn.addEventListener("click", function () {
 
 //   shoppingListHeading.classList.remove("displayHide");
 // });
+
+// yasir contact button
+
+document.querySelector("#contactformbutton").addEventListener("click", (event) => {
+  event.preventDefault();
+  alert("Thank you for your message")
+})
