@@ -9,7 +9,7 @@ body {
   background: var(--bkg-color);
 }
 
-#background{
+#background {
   background: url(../img/background-img.png);
   height: 95vh;
   background-size: cover;
@@ -23,7 +23,7 @@ p {
 header {
   background-color: var(--nav-color);
 }
-#headernavhome{
+#headernavhome {
   z-index: 1;
 }
 /* 
@@ -50,7 +50,7 @@ a {
   align-items: center;
   gap: 30px;
 }
-.nav-item{
+.nav-item {
   list-style: none;
 }
 .nav-branding {
@@ -99,9 +99,9 @@ a {
 }
 
 @media (max-width: 450px) {
-  #background{
+  #background {
     background: url(../img/HOMEimg.png);
-    height:90vh;
+    height: 90vh;
     background-size: cover;
   }
 
@@ -151,7 +151,6 @@ a {
 #messageForm {
   margin: 30px 0;
   text-align: center;
-
 }
 form input {
   height: 30px;
@@ -178,7 +177,6 @@ btnDiv button {
 #shoppingListHeading {
   text-align: center;
   margin-top: 30px;
-
 }
 #shoppingListHeading p {
   border: 1px solid var(--text-color);
@@ -194,11 +192,11 @@ btnDiv button {
   border: 1px solid black;
 } */
 
-#unOrdermessage{
-    width: 80%;
-    margin: auto;
+#unOrdermessage {
+  width: 80%;
+  margin: auto;
 }
-#unOrdermessage button{
+#unOrdermessage button {
   background: url(../img/closeBtn2.svg);
   width: 20px;
   height: 20px;
@@ -209,9 +207,7 @@ btnDiv button {
   position: relative;
   bottom: 5px;
   cursor: pointer;
-
 }
-
 
 #messageContainer {
   margin: auto;
@@ -221,8 +217,9 @@ btnDiv button {
   padding: 15px;
   border-radius: 10px;
   width: 85%;
+  background-color: var(--form-color);
 }
-#messageContainer li{
+#messageContainer li {
   line-height: 25px;
   color: var(--text-color);
 }
@@ -232,7 +229,6 @@ btnDiv button {
   padding: 10px;
   font-size: small;
 }
-
 
 .hidden {
   display: none;
@@ -279,7 +275,7 @@ body.dark-theme {
   }
 }
 
-#darkmodebutton{
+#darkmodebutton {
   box-sizing: border-box;
   padding: 8px;
   background-color: var(--bkg-color);
