@@ -23,6 +23,9 @@ p {
 header {
   background-color: var(--nav-color);
 }
+#headernavhome{
+  z-index: 1;
+}
 /* 
 li {
   list-style: none;
@@ -162,7 +165,7 @@ form button {
   bottom: 150px;
   left: 50%;
 }
-#btnDiv button {
+btnDiv button {
   padding: 8px;
 }
 
@@ -185,10 +188,24 @@ form button {
   border: 1px solid black;
 } */
 
-ul{
+#unOrdermessage{
     width: 80%;
     margin: auto;
 }
+#unOrdermessage button{
+  background: url(../img/closeBtn2.svg);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-color: var(--form-color);
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  bottom: 5px;
+  cursor: pointer;
+
+}
+
 
 #messageContainer {
   margin: auto;

@@ -28,7 +28,6 @@ const formEL = document.querySelector("form");
 formEL.addEventListener("submit", (event) => {
   event.preventDefault();
   const userInput = document.querySelector("input").value;
-  console.log(userInput.length);
 
 //   putMessage(userInput).then(getMessages).then(displayMessage);
   postMessage(userInput)
@@ -36,6 +35,25 @@ formEL.addEventListener("submit", (event) => {
 
   formEL.reset();
 });
+
+const messageContainer = document.querySelector('#messageContainer');
+messageContainer.addEventListener('click',(event)=>{
+  event.preventDefault();
+  if(event.target.className === 'deleteButton'){
+    console.log(event.target);
+    getMessages()
+      .then(message =>  {
+        for (const key in message) {
+            const parentElement = event.target.parentElement;
+            if(parentElement.id === key){
+              parentElement.remove();
+              deleteMessage('messages',key);
+            }
+     
+        }
+      })
+  }
+})
 
 getMessages()
   .then(displayMessage);
@@ -80,3 +98,4 @@ btn.addEventListener("click", function () {
 });
 
 //end darkmode
+   
