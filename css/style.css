@@ -102,7 +102,7 @@ a {
   text-align: center;
   margin-top: 30px;
 }
-#headingtitle p{
+#headingtitle p {
   border: 1px solid 045eb2;
   display: inline-block;
   padding: 8px;
@@ -194,7 +194,7 @@ btnDiv button {
   text-align: center;
   margin-top: 30px;
 }
-#headingtitle p{
+#headingtitle p {
   border: 1px solid 045eb2;
   display: inline-block;
   padding: 8px;
@@ -231,23 +231,25 @@ btnDiv button {
 
 #messageContainer {
   margin: auto;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--formtext-color);
   width: 50%;
   box-sizing: border-box;
   padding: 15px;
   border-radius: 10px;
   width: 85%;
+
   background-color: var(--form-color);
 }
 #messageContainer li {
   line-height: 25px;
-  color: var(--text-color);
+  color: var(--formtext-color);
 }
 #messageContainer p {
   box-sizing: border-box;
   text-align: left;
   padding: 10px;
   font-size: small;
+  color: var(--formtext-color);
 }
 
 .hidden {
@@ -267,17 +269,19 @@ btnDiv button {
 
 body {
   --text-color: #ffffff;
+  --formtext-color: #000000;
   --bkg-color: linear-gradient(
     69deg,
     rgba(192, 190, 253, 1) 0%,
     rgba(163, 158, 239, 1) 100%
   );
   --nav-color: #045eb2;
-  --form-color: #827fb7;
+  --form-color: #ffffff;
 }
 
 body.dark-theme {
   --text-color: #ffffff;
+  --formtext-color: #ffffff;
   --bkg-color: #292775;
   --nav-color: #011a31;
   --form-color: #141328;
