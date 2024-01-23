@@ -80,6 +80,14 @@ a {
   background-color: white;
 }
 
+
+/* Hover styling to your buttons */
+button:hover {
+  background-color: linear-gradient(180deg, #045EB2 0%, #EFCEF4 100%);
+  cursor: pointer;
+  color: white;
+}
+
 /*Knapp som lligger på "HOME*/
 #createListBtn {
   background-color: #045eb2;
