@@ -155,6 +155,12 @@ a {
   .nav-menu.active {
     left: 0;
   }
+
+  /* ANIMATION - LUNA */
+  #arrowLottie {
+    width: 50px;
+    height: 50px;
+  }
 }
 /* Hamburger menu And Navbar "End" */
 
@@ -219,8 +225,8 @@ btnDiv button {
 }
 #unOrdermessage button {
   background: url(../img/closeBtn2.svg);
-   width: 20px;
-  height: 20px; 
+  width: 20px;
+  height: 20px;
   background-size: contain;
   background-color: var(--form-color);
   border-radius: 50%;
@@ -318,25 +324,36 @@ body.dark-theme {
 } */
 
 /* Style för feature från Stoffe */
-#shoppingListHeading{
+#shoppingListHeading {
   text-align: center;
   margin: 1rem;
 }
-#shoppingListHeading select{
+#shoppingListHeading select {
   padding: 5px;
 }
 
-#listsForm{
+#listsForm {
   text-align: center;
 }
-#deleteListsForm{
+#deleteListsForm {
   text-align: center;
   margin: 1rem;
 }
-#message-list-picker{
+#message-list-picker {
   padding: 5px;
 }
 
-#lists-delete-id{
+#lists-delete-id {
   padding: 5px;
+}
+
+/* LUNA ANIMATION CSS */
+#arrowLottie {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  bottom: 90px;
+  margin-left: -330px;
+  transform: rotate(40deg);
 }
