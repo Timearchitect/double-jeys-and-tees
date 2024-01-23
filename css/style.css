@@ -313,9 +313,38 @@ body.dark-theme {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
-/* .footer{
-  
-} */
+/* Footer */
+footer{
+  background-color: var(--nav-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 1.5em;
+  margin-top: 50px;
+}
+
+#footername {
+  font-size: 0.7em;
+  color: #fff;
+}
+
+footer>nav ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: orange;
+}
 
 /* Style för feature från Stoffe */
 #shoppingListHeading{
