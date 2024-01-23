@@ -79,6 +79,7 @@ a {
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
+
 /*Knapp som lligger på "HOME*/
 #createListBtn {
   background-color: #045eb2;
@@ -165,7 +166,7 @@ a {
 }
 
 #messageForm {
-  margin: 30px 0;
+  margin: 25px 0;
   text-align: center;
 }
 form input {
@@ -218,8 +219,8 @@ btnDiv button {
 }
 #unOrdermessage button {
   background: url(../img/closeBtn2.svg);
-  width: 20px;
-  height: 20px;
+   width: 20px;
+  height: 20px; 
   background-size: contain;
   background-color: var(--form-color);
   border-radius: 50%;
@@ -315,3 +316,27 @@ body.dark-theme {
 /* .footer{
   
 } */
+
+/* Style för feature från Stoffe */
+#shoppingListHeading{
+  text-align: center;
+  margin: 1rem;
+}
+#shoppingListHeading select{
+  padding: 5px;
+}
+
+#listsForm{
+  text-align: center;
+}
+#deleteListsForm{
+  text-align: center;
+  margin: 1rem;
+}
+#message-list-picker{
+  padding: 5px;
+}
+
+#lists-delete-id{
+  padding: 5px;
+}
